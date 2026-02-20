@@ -18,6 +18,11 @@
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/54044983-fe63-47dc-aa5e-2c9c8347bfd8" />
 
 
+Выбрал другие поля из csv, чтобы было удобнее
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/abd0b3ed-896c-46c2-8fb3-1ea75df4377e" />
+
+
 Добавил вычисляемое поле маржи
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/de22cc50-bddf-4497-97e7-793ffabd5539" />
