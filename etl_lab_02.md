@@ -47,6 +47,7 @@
 ### Доп. Задание 1 — Анализ по штатам
 
 Результат анализа:
+
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/bfda9fcc-0ba0-4ae3-8f91-55063009b38a" />
 
 Выводы:
