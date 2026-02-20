@@ -76,6 +76,7 @@
 
 
 
+## Приложения к лабораторной работе:
 
 [Файл анализа Colaboratory](https://colab.research.google.com/drive/1FB2esOXDnDtEfBRJjTzSw9UamhTW1eb9?usp=sharing)
 
@@ -85,4 +86,4 @@
 
 [Файл lab_02_3_csv_to_products.ktr](/lab_02_3_csv_to_products.ktr)
 
-[Файл Job CSV_to_MYsql.kjb](/"Job CSV_to_MYsql.kjb")
+[Файл Job_CSV_to_MYsql.kjb](/Job_CSV_to_MYsql.kjb)
