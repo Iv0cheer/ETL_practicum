@@ -15,7 +15,7 @@
 
 Общая структура трансформации
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/54044983-fe63-47dc-aa5e-2c9c8347bfd8" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/54044983-fe63-47dc-aa5e-2c9c8347bfd8" />
 
 
 Добавил вычисляемое поле маржи
