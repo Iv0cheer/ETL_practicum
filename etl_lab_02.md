@@ -32,6 +32,18 @@
 <img width="1109" height="366" alt="image" src="https://github.com/user-attachments/assets/68840e6b-54cf-49f6-8003-50832fb46531" />
 
 
+#### Job и его запуск
+
+Скриншот общей структуры
+
+<img width="1443" height="1079" alt="image" src="https://github.com/user-attachments/assets/2c7383be-720a-4dc2-b0e3-c9e723d1a403" />
+
+
+Скриншот модуля HTTP
+
+<img width="1540" height="890" alt="image" src="https://github.com/user-attachments/assets/db193481-31f8-4dc3-a721-fe176b994b56" />
+
+
 ### Доп. Задание 1 — Анализ по штатам
 
 Результат анализа:
@@ -66,3 +78,11 @@
 
 
 [Файл анализа Colaboratory](https://colab.research.google.com/drive/1FB2esOXDnDtEfBRJjTzSw9UamhTW1eb9?usp=sharing)
+
+[Файл lab_02_1_csv_orders.ktr](/lab_02_1_csv_orders.ktr)
+
+[Файл lab_02_2_csv_to_Customers.ktr](/lab_02_2_csv_to_Customers.ktr)
+
+[Файл lab_02_3_csv_to_products.ktr](/lab_02_3_csv_to_products.ktr)
+
+[Файл Job CSV_to_MYsql.kjb](/Job CSV_to_MYsql.kjb)
