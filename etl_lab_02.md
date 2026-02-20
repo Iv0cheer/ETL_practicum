@@ -85,4 +85,4 @@
 
 [Файл lab_02_3_csv_to_products.ktr](/lab_02_3_csv_to_products.ktr)
 
-[Файл Job CSV_to_MYsql.kjb](/Job CSV_to_MYsql.kjb)
+[Файл Job CSV_to_MYsql.kjb](/"Job CSV_to_MYsql.kjb")
