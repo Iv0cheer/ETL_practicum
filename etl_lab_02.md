@@ -11,6 +11,16 @@
 
 ### Реализация основного фильтра для загрузки в БД
 
+* Первая трансформация
+<img width="2312" height="1244" alt="image" src="https://github.com/user-attachments/assets/54044983-fe63-47dc-aa5e-2c9c8347bfd8" />
+
+<img width="1565" height="626" alt="image" src="https://github.com/user-attachments/assets/de22cc50-bddf-4497-97e7-793ffabd5539" />
+
+
+<img width="1054" height="569" alt="image" src="https://github.com/user-attachments/assets/c83c0a62-5601-4b13-9fd6-0d439271026b" />
+
+Дальше почистил NULL в таблице
+<img width="1109" height="366" alt="image" src="https://github.com/user-attachments/assets/68840e6b-54cf-49f6-8003-50832fb46531" />
 
 
 ### Доп. Задание 1 — Анализ по штатам
