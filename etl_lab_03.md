@@ -100,10 +100,10 @@
 
 ## Приложения к лабораторной работе:
 
-[Файл трансформации CSV --> MySQl]()
+[Файл трансформации CSV --> MySQL(csv_to_mysql_lab02.ktr)](/csv_to_mysql_lab02.ktr)
 
-[Файл трансформации Excel --> MySQl]()
+[Файл трансформации Excel --> MySQL (excel_to_mysql_lab02.ktr)](/excel_to_mysql_lab02.ktr)
 
-[Файл трансформации PostgreSQL --> MySQl]()
+[Файл трансформации PostgreSQL --> MySQL (postgresql_to_mysql.ktr)](/postgresql_to_mysql.ktr)
 
-[Файл Job]()
+[Файл Job (Job CSV_excel_postgre_to_MYsql.kjb)](/Job CSV_excel_postgre_to_MYsql.kjb)
