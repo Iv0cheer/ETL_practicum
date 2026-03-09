@@ -134,7 +134,7 @@
 <details><summary>Код этого представления:</summary>
 
   ```sql
-  CREATE OR REPLACE VIEW project_fact_summary AS
+  CREATE VIEW project_fact_summary AS
   SELECT 
       p.project_id,
       p.project_name,
