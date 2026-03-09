@@ -77,7 +77,7 @@
 <img width="1967" height="1083" alt="image" src="https://github.com/user-attachments/assets/b45464d6-47b5-4760-84ce-f8ca171ee638" />
 
 
-Проверка таблиц в phpMyAdmin:
+### Проверка таблиц в phpMyAdmin:
 
 <details><summary>**Таблица projects**</summary>
 
@@ -94,6 +94,65 @@
 <details><summary>**Таблица resources_pl**</summary>
 
 <img width="1932" height="451" alt="image" src="https://github.com/user-attachments/assets/7873cac8-cf45-4384-9334-79a394da0cbf" />
+
+</details>
+
+
+### Создание представлений:
+
+Представление для оценки загруженности сотрудников на проекте:
+
+<img width="1217" height="523" alt="image" src="https://github.com/user-attachments/assets/2b49a9dd-f7b3-49c6-b4c6-398677ff1850" />
+
+<details><summary>Код этого представления:</summary>
+
+  ```sql
+  CREATE VIEW employee_workload AS
+  SELECT 
+      employee_name,
+      position,
+      COUNT(DISTINCT project) as projects_count,
+      ROUND(SUM(hours_worked), 1) as total_hours,
+      ROUND(SUM(payment_amount), 2) as total_earned,
+      ROUND(AVG(hours_worked), 1) as avg_hours_per_day,
+      COUNT(DISTINCT date_st) as work_days_count,
+      ROUND(SUM(hours_worked) / (COUNT(DISTINCT date_st) * 8) * 100, 1) as workload_percent
+  FROM proj_timesheets
+  WHERE employee_name IS NOT NULL 
+    AND position IS NOT NULL
+    AND hours_worked IS NOT NULL
+  GROUP BY employee_name, position;
+  ```
+
+
+</details>
+
+Представление для общей оценки проектов по план-факту:
+
+<img width="1137" height="432" alt="image" src="https://github.com/user-attachments/assets/3fd1b2dc-6a1a-4206-b9db-9246e9f6bc3f" />
+
+<details><summary>Код этого представления:</summary>
+
+  ```sql
+  CREATE OR REPLACE VIEW project_fact_summary AS
+  SELECT 
+      p.project_id,
+      p.project_name,
+      p.status,
+      p.start_date,
+      p.end_date,
+      p.planned_budget,
+      p.planned_hours,
+      COALESCE(SUM(t.hours), 0) as actual_hours,
+      COALESCE(SUM(t.cost), 0) as actual_cost,
+      COUNT(DISTINCT t.employee_id) as actual_employees,
+      CURRENT_DATE as report_date
+  FROM projects p
+  LEFT JOIN timesheets t ON p.project_id = t.project_id
+  GROUP BY p.project_id, p.project_name, p.status, p.start_date, p.end_date, 
+           p.planned_budget, p.planned_hours;
+  ```
+
 
 </details>
 
