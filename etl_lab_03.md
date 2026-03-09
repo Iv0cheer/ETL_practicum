@@ -106,4 +106,4 @@
 
 [Файл трансформации PostgreSQL --> MySQL (postgresql_to_mysql.ktr)](/postgresql_to_mysql.ktr)
 
-[Файл Job (Job CSV_excel_postgre_to_MYsql.kjb)](/Job CSV_excel_postgre_to_MYsql.kjb)
+[Файл Job (Job_CSV_excel_postgre_to_MYsql.kjb)](/Job_CSV_excel_postgre_to_MYsql.kjb)
