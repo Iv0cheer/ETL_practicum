@@ -30,8 +30,6 @@
 
 </details>
 
-<img width="853" height="402" alt="image" src="https://github.com/user-attachments/assets/2d560a3a-52e3-426c-979d-e8979c1b6b3e" />
-
 
 
 ## Приложения к лабораторной работе:
