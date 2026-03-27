@@ -43,3 +43,6 @@
 | Ошибка `'int' object has no attribute 'compute'` | Использование `df.shape[0]` вместо `len(df.index)` |
 
 ---
+
+
+[Google Colaboratory](https://colab.research.google.com/drive/1UU44b0njO4ZMgOnbAPkEQKe1WYp52U6D?usp=sharing)
