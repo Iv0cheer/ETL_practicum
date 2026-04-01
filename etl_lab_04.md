@@ -12,13 +12,6 @@
 
 ---
 
-## Инструментарий
-
-- **Язык программирования:** Python 3
-- **Среда выполнения:** Google Colab
-
----
-
 #### Все выполнение задания можно найти по ссылке на [Google Colaboratory](https://colab.research.google.com/drive/1UU44b0njO4ZMgOnbAPkEQKe1WYp52U6D?usp=sharing) или открыть локально в [файле *.ipynb](/Etl_lab_04.ipynb).
 
 ## Выводы по работе:
