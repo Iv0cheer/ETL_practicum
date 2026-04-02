@@ -55,7 +55,7 @@ dag = DAG(
     catchup=False
 )
 
-# ИЗМЕНЕНИЕ
+
 def ensure_data_dir():
     data_dir = '/opt/airflow/data'
     os.makedirs(data_dir, exist_ok=True)
@@ -123,7 +123,7 @@ def filter_weekend_and_calc_avg_temp():
     
     avg_temp = weekend_days['temperature'].mean()
     
-    # ИЗМЕНЕНИЕ
+    
     result_df = pd.DataFrame({
         'weekend_dates': [weekend_days['date'].dt.date.tolist()],
         'weekend_temperatures': [weekend_days['temperature'].tolist()],
@@ -146,7 +146,7 @@ def fetch_sales_data():
     """
     Генерация данных продаж (для обучения модели)
     """
-    # ИЗМЕНЕНИЕ
+    
     data_dir = ensure_data_dir()
     
     weather_df = pd.read_csv(os.path.join(data_dir, 'weather_forecast_vienna.csv'))
@@ -161,7 +161,7 @@ def fetch_sales_data():
     
     df = pd.DataFrame({'date': dates, 'sales': sales})
     
-    # ИЗМЕНЕНИЕ
+    
     file_path = os.path.join(data_dir, 'sales_data_vienna.csv')
     df.to_csv(file_path, index=False)
     
@@ -171,7 +171,7 @@ def join_datasets():
     """
     Объединение погодных данных с данными о продажах
     """
-    # ИЗМЕНЕНИЕ
+    
     data_dir = ensure_data_dir()
     
     weather_df = pd.read_csv(os.path.join(data_dir, 'weather_forecast_vienna.csv'))
@@ -182,14 +182,14 @@ def join_datasets():
     joined_df['temperature'] = joined_df['temperature'].fillna(joined_df['temperature'].mean())
     joined_df['sales'] = joined_df['sales'].fillna(joined_df['sales'].mean())
     
-    # ИЗМЕНЕНИЕ
+    
     file_path = os.path.join(data_dir, 'joined_data_vienna.csv')
     joined_df.to_csv(file_path, index=False)
     
     print(f"Joined dataset saved with {len(joined_df)} records.")
 
 def train_ml_model():
-    # ИЗМЕНЕНИЕ
+    
     data_dir = ensure_data_dir()
     
     df = pd.read_csv(os.path.join(data_dir, 'joined_data_vienna.csv'))
@@ -200,7 +200,7 @@ def train_ml_model():
     model = LinearRegression()
     model.fit(X, y)
     
-    # ИЗМЕНЕНИЕ
+    
     file_path = os.path.join(data_dir, 'ml_model_vienna.pkl')
     joblib.dump(model, file_path)
     
@@ -218,7 +218,7 @@ def predict_sales_for_weekend():
     """
     Прогнозирование продаж на выходные (ср. темпа)
     """
-    # ИЗМЕНЕНИЕ
+    
     data_dir = ensure_data_dir()
 
     model = joblib.load(os.path.join(data_dir, 'ml_model_vienna.pkl'))
@@ -236,7 +236,7 @@ def predict_sales_for_weekend():
         'predicted_sales': [predicted_sales[0]]
     })
     
-    # ИЗМЕНЕНИЕ
+    
     file_path = os.path.join(data_dir, 'weekend_sales_prediction.csv')
     prediction_result.to_csv(file_path, index=False)
     
