@@ -7,19 +7,19 @@
 | 19 | Анализ расширения DAG (новые типы данных) |	Оптимизация хранения (сжатие/структура папок) |	Возможность выполнения на удаленных воркерах |
 
 
-1. Права доступа к папкам
+### Права доступа к папкам
 
 <img width="968" height="73" alt="image" src="https://github.com/user-attachments/assets/b4b1fee4-d72d-4eb7-983b-ef6a53b3bc51" />
 
-2. Сборка и запуск Docker Compose
+### Сборка и запуск Docker Compose
 
 <img width="1388" height="274" alt="image" src="https://github.com/user-attachments/assets/443e081c-3f4b-4e9f-b187-4e44fff3d8ac" />
 
-3. Запуск контейнеров `docker compose up -d`
+### Запуск контейнеров `docker compose up -d`
 
 <img width="884" height="223" alt="image" src="https://github.com/user-attachments/assets/42d02fe7-ee0d-452d-83e0-d5d66d3b273b" />
 
-4. Написание DAG (модификация DAG'а)
+### Написание DAG (модификация DAG'а)
 
 <details>
   <summary>КЛИК СЮДА ДЛЯ КОДА</summary>
@@ -271,7 +271,7 @@ clean_data_directory >> download_launches >> get_pictures >> extract_metadata >>
   
 </details>
 
-5. Запуск DAG'а
+### Запуск DAG'а
 
 <img width="2308" height="585" alt="image" src="https://github.com/user-attachments/assets/52372074-6afe-4345-9466-b1dd7760440e" />
 
@@ -279,7 +279,7 @@ clean_data_directory >> download_launches >> get_pictures >> extract_metadata >>
 
 <img width="2224" height="425" alt="image" src="https://github.com/user-attachments/assets/beeb2b88-d378-4390-969c-10944eb77168" />
 
-6. Стримлит
+### Стримлит
 
 По итогу я загрузил заглушки в папку images, иначе не получилось. JSON - не отработал тоже...
 
@@ -287,9 +287,9 @@ clean_data_directory >> download_launches >> get_pictures >> extract_metadata >>
 
 [Модифицированный файл ml.ipynb](/ml_copy.ipynb)
 
-7. Что было изменено:
+## Что было изменено:
 
-ЗАДАНИЕ ПЕРВОЕ. Анализ расширения DAG (новые типы данных)
+### ЗАДАНИЕ ПЕРВОЕ. Анализ расширения DAG (новые типы данных)
 
 <details><summary>Изменения в коде (модификации)</summary>
 
@@ -349,7 +349,7 @@ clean_data_directory >> download_launches >> get_pictures >> extract_metadata >>
 
 <img width="954" height="630" alt="image" src="https://github.com/user-attachments/assets/bb545c11-eefd-4bb1-ad90-c21c17bf9a43" />
 
-ЗАДАНИЕ ВТОРОЕ. Оптимизация хранения (сжатие/структура папок)
+### ЗАДАНИЕ ВТОРОЕ. Оптимизация хранения (сжатие/структура папок)
 
 <details><summary>Изменения в коде (модификации)</summary>
 
@@ -431,7 +431,7 @@ compress_images = PythonOperator(
 
 > Создает папку archives/, находит изображения старше 7 дней, сжимает их в tar.gz архив, удаляет оригиналы, сохраняет JSON файл с информацией об архиве
 
-ЗАДАНИЕ ТРЕТЬЕ. Возможность выполнения на удаленных воркерах
+### ЗАДАНИЕ ТРЕТЬЕ. Возможность выполнения на удаленных воркерах
 
 <details><summary>Изменения в коде (модификации)</summary>
   
@@ -517,3 +517,10 @@ if os.path.exists(WORKER_METRICS_FILE):
 | Лаги компьютера | Никак, база |
 
 
+## Все файлы лабораторной работы
+
+[DAG файл](/variant_19_dag_52.py)
+
+[app.py файл](/app_19.py)
+
+[ml_copy.ipynb файл](/ml_copy.ipynb)
