@@ -521,6 +521,6 @@ if os.path.exists(WORKER_METRICS_FILE):
 
 [DAG файл](/variant_19_dag_52.py)
 
-[app.py файл](/app_19.py)
+[app.py файл](/app_52.py)
 
-[ml_copy.ipynb файл](/ml_copy.ipynb)
+[ml_copy.ipynb файл](/ml_copy_52.ipynb)
