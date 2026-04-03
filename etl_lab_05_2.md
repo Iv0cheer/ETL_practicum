@@ -22,7 +22,7 @@
 4. Написание DAG (модификация DAG'а)
 
 <details>
-  <summary></summary>
+  <summary>КЛИК СЮДА ДЛЯ КОДА</summary>
 
 ```python
 import json
