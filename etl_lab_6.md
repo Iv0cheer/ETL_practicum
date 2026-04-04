@@ -201,6 +201,13 @@ WHERE pagename = 'Telegram';
 </details>
 
 
+## Стримлит
+
+<img width="2275" height="958" alt="image" src="https://github.com/user-attachments/assets/67ae2f01-4890-4a73-aab5-a5bf50b82d49" />
+
+<img width="2290" height="309" alt="image" src="https://github.com/user-attachments/assets/8e98b243-c0a8-4343-b985-29ccad049966" />
+
+
 ## Файлы лабораторной работы
 
 [app.py](/61_app.py)
